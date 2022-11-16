@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="heading">hello text</h1>
+    <p id="para">this is para</p>
+    <a href="xyz.html" id="a_val">Link</a>
+
+    <input type="text" value="Dhruvi" id="inp">
+    <img src="test.jpg" alt="" id="img_val">
+
+    <script>
+
+        var h_val = document.getElementById('heading');
+        var p_val = document.getElementById('para');
+        var anchor = document.getElementById('a_val');
+        var input = document.getElementById('inp');
+        var image = document.getElementById('img_val');
+        alert(input.value);
+        alert(anchor.href);
+        alert(image.src);
+
+        console.log(h_val.innerHTML );
+
+        // alert(h_val.innerHTML);
+        // alert(p_val.innerHTML);
+        // alert(anchor.innerHTML)
+    </script>
+    
+</body>
+</html>

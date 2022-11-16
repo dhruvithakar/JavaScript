@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" id="nm"></td>
+            </tr>
+
+            <tr>
+                <td>Email:</td>
+                <td><input type="text" id="em"></td>
+            </tr>
+            <tr>
+                <td>Mobile:</td>
+                <td><input type="text" id="mb"></td>
+            </tr>
+            <tr>
+                
+                <td><input type="submit" onclick=" return ValidateForm()"></td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+
+        function ValidateForm()
+        {
+            var name = document.getElementById('nm');
+            var email = document.getElementById('em');
+            var mobile = document.getElementById('mb');
+            if(name.value == "")
+            {
+                alert("Name required");
+                return false; // return 1;
+            }
+
+            if(email.value == "")
+            {
+                alert("Email required");
+                return false; // return 1;
+            }
+
+            if(mobile.value == "")
+            {
+                alert("Mobile required");
+                return false;
+            }
+           
+        }
+    </script>
+    
+</body>
+</html>

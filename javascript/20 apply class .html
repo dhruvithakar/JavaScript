@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .x 
+        {
+            background:linear-gradient(lightblue,lightcoral);
+            font-size: 134px;
+            padding: 25px;
+            font-weight: bold;
+            color: transparent;
+           -webkit-background-clip: text;
+           -moz-background-clip: text;
+           -o-background-clip: text;
+
+        }
+    </style>
+</head>
+<body>
+
+    <p id="p_test" >this is para</p>
+    <h1 id="h_test">this is heading</h1>
+
+    <script>
+
+        var para = document.getElementById('p_test');
+        var heading = document.getElementById('h_test');
+
+        para.classList.add('x');
+        heading.classList.add('x');
+    </script>
+
+</body>
+</html>

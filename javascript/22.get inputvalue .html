@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="getVal">
+    <h1 id="heading">hello text</h1>
+    <p id="para">this is para</p>
+    <a href="xyz.html" id="a_val">Link</a>
+    <img src="img/123.jpg" alt="" id="img_val" height="300px" width="400px">
+
+
+    <button onclick="getValue()"> get input Value</button>
+    <button onclick="GetH1val()"> get h1 Value</button>
+    <button onclick="GetPval()"> get p Value</button>
+    <button onclick=" GetAval()"> get a Value</button>
+    <button onclick="GetA_href_val()"> get a href</button>
+    <button onclick="GetImg()"> get img src</button>
+
+    <script>
+
+       
+       
+        
+       
+
+       function getValue()
+       {
+          i = document.getElementById('getVal');
+         alert(i.value);
+         
+       }
+
+       function GetH1val()
+       {
+            var h_val = document.getElementById('heading');
+             alert(h_val.innerHTML)
+       }
+
+       function GetPval()
+       {
+              var p_val = document.getElementById('para');
+             alert(p_val.innerHTML)
+       }
+
+
+       function GetAval()
+       {
+          var anchor = document.getElementById('a_val');
+             alert(anchor.innerHTML)
+       }
+
+       function GetA_href_val()
+       {
+              var anchor = document.getElementById('a_val');
+             alert(anchor.href)
+       }
+
+       function GetImg()
+       {
+            var image = document.getElementById('img_val');
+             alert(image.src)
+       }
+
+      
+    </script>
+
+</body>
+</html>
