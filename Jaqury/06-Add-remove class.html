@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        div 
+        {
+            height: 200px;
+            width: 200px;
+            background: gray;
+           
+        }
+
+        .x 
+        {
+            height: 100px;
+            width: 400px;
+            background: linear-gradient(45deg,red,blue);
+            font-size: 34px;
+            font-weight: bold;
+            font-style: italic;
+
+        }
+    </style>
+</head>
+<body>
+
+   
+    <button id="b1">Add Class</button>
+    <button id="b2">Remove Class</button>
+    <button id="b3">Add/Remove Class</button>
+    <div>Hello</div>
+
+
+
+    <script>
+        $(document).ready( () => {
+
+            $('#b1').click( () => {
+
+                $('div').addClass('x');
+             
+            })
+
+            $('#b2').click( () => {
+
+                $('div').removeClass('x');
+
+                })
+
+            $('#b3').click( () => {
+
+                $('div').toggleClass('x');
+
+                })
+
+        })
+    </script>
+    
+</body>
+</html>

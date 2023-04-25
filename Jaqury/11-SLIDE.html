@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<style type="text/css">
+		.panel
+		{
+			background: lightblue;
+			border: 1px solid coral;
+			font-size: 24px;
+		}
+		.panel-info
+		{
+			background: lightblue;
+			border: 1px solid coral;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="panel">q...?</div>
+	<div class="panel-info">ans....</div>
+
+
+	<script type="text/javascript">
+		$('.panel').click(function (){
+
+			$('.panel-info').slideToggle();
+		})
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+    <p class="x">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis ducimus explicabo debitis nihil, facilis at maxime quos unde esse consequuntur ipsa voluptate placeat saepe vel nemo temporibus quasi officia amet.
+    </p>
+
+    <button id="y">FadeOut</button>
+    <button id="a">FadeIn</button>
+    <button id="b">FadeOut/ FadeIn</button>
+
+    <script>
+                // $('tagname'/".classname"/'#idname').event();
+
+                $(document).ready(function (){
+
+                    $('#y').click(function (){
+
+                        $('.x').fadeOut(2000);
+
+                    })
+
+                    $('#a').click(function (){
+
+                        $(".x").fadeIn();
+                    })
+
+                    $('#b').click(function (){
+
+                    $(".x").fadeToggle(1000);
+                    })
+
+
+
+                })
+
+    </script>
+    
+</body>
+</html>

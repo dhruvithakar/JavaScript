@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quae perferendis rerum voluptatem porro iure <b>Yashpal</b>consequuntur id animi delectus? Ad nobis sint velit rem tempora architecto quod officia at molestias!
+    </p>
+
+    <input type="text" name="" id="">
+
+    <button class="b1" >get P value</button>
+    <button class="b2" >get INPUT value</button>
+    <button class="b3" >get P HTML tags</button>
+    <button class="b4" >get INPUT type</button>
+
+    <script>
+
+    $(document).ready(function (){
+
+        $('.b1').click(function (){
+
+            //$('#para').text();
+           // document.write( $('#para').text())
+           alert( $('#para').text())
+        })
+
+        $('.b2').click(function(){
+
+            // $('input').val();
+
+           // document.write($('input').val());
+
+           alert($('input').val())
+        })
+
+        $('.b3').click(function (){
+
+           alert($('p').html()) ;
+        })
+
+        $('.b4').click(function (){
+
+        alert($('input').attr("type")) ;
+        })
+
+
+
+    })
+
+
+    </script>
+    
+</body>
+</html>

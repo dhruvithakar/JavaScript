@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <p id="para"> Hello  </p>
+    <input type="text" name="" id="" value="Dhruvi">
+
+    <a href="xyz.html">LINk</a>
+
+    <div></div>
+
+    <button class="b1">Change Text</button>
+    <button class="b2">PUT text In DIV</button>
+
+    <script>
+
+        //document.getElementById('para').innerHTML = "Yashpal"
+
+        $('.b1').click(function(){
+            $('#para').text("Prince");
+            $('input').val("Prince");
+           alert( $('a').text());
+           alert( $('a').attr('href'));
+        })
+
+        $('.b2').click(function (){
+
+            //$('div').text("<b> THIS IS DIV </b>");
+            $('div').html("<b> THIS IS DIV </b>");
+        })
+
+      
+
+    </script>
+    
+</body>
+</html>

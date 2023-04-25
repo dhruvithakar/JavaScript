@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+    <p id="p1" class="para">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem optio sint ex explicabo qui amet aperiam eos, molestias mollitia, atque nisi iste. Minima, ipsa minus! Laboriosam officia minima quis alias.
+    </p>
+
+    <button id="b1" class="btn1">Hide Me</button>
+    <button id="b2" class="btn2">Show Me</button>
+    <button id="b3" class="btn3">Hide / Show</button>
+
+    <script>
+
+            // $("tagname").event();
+            // $('.classname').event();
+            // $("#idname").event();
+
+            // $(document).ready(function (){
+
+            //     $("button").click(function (){
+
+            //         $("p").hide();
+            //     })
+            // })
+
+            // $(document).ready(function (){
+
+            //     $('#b1').click(function (){
+
+            //         // $('#p1').hide();
+            //        // $('p').hide();
+            //         $('.para').hide();
+
+            //     })
+
+            // })
+
+            // $(document).ready(function (){
+
+            //     $('p').click(function () {
+
+            //         $('p').hide();
+
+            //     })
+
+            // })
+
+            // $(document).ready(function (){
+
+            //     $('p').click(function () {
+
+            //         $(this).hide(5000);
+
+            //     })
+
+            // })
+
+            $(document).ready(function (){
+
+                    $('.btn1').click(function () {
+
+                        $('.para').hide(1000);
+
+                    })
+
+                    $('.btn2').click(function () {
+
+                    $('.para').show(1000);
+
+                    })
+
+                    $('.btn3').click(function () {
+
+                    $('.para').toggle(1000);
+
+                    })
+
+              })
+        
+
+
+    </script>
+    
+</body>
+</html>

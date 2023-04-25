@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+        .x
+        {
+            height: 100px;
+            width: 100px;
+            background:gray;
+            position: absolute;
+            top: 100px;
+            left: -100px;
+        }
+
+        .y
+        {
+            height: 100px;
+            width: 100px;
+            background:red;
+            position: absolute;
+            top:0px;
+            left: 300px;
+        }
+
+        .xyz 
+        {
+            height: 100px;
+            width: 100px;
+            background:linear-gradient(red,blue);
+
+            animation: RotateMe 1s forwards ;
+            position: relative;
+
+        }
+
+        @keyframes RotateMe
+        {
+            from{transform: rotate(0deg);height: 0;width: 0;left: -190;}
+            to{transform: rotate(360deg);height: 100px;width: 100px;left: 100px;}
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <button class="b1">Animate Me</button><br><br>
+
+    <button class="b2">Remove CLass OF SECOND DIV</button><br><br>
+
+<div class="x">Hello</div>
+<div class="y">dfgfd</div>
+
+
+
+<script>
+
+    $('.b1').click(function () {
+
+        // $(".x").animate({
+        //             left: '250px',
+        //             height: '+=150px',
+        //             width: '+=150px',
+        //             fontSize :'45px',
+        //             fontWeight:'900',
+                    
+                    
+        //         });
+
+                $('.x').addClass('xyz');
+                $('.y').addClass('xyz');
+              
+
+//   $('.x').css("background","red");
+//   $('.x').css("fontStyle","italic");
+        
+    })
+
+    $('.b2').click(function (){
+        $('.y').removeClass('xyz');
+    })
+    
+</script>
+    
+</body>
+</html>
